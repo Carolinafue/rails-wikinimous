@@ -1,0 +1,9 @@
+<h1>Articulos</h1>
+
+<% @articles.each do |article| %>
+  <h2><%= article.title%><small><%= "*" * article.rating %>
+  </small></h2>
+  <p><%= article.autor %></p>
+<%= link_to "contenido", article_path(article)  %>
+<%= link_to "crear articulo", article_path(article), method: :create %>
+<% end %>

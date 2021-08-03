@@ -1,0 +1,8 @@
+<h1><%= @articles.title %></h1><%= "*" * @articles.rating %>
+<p><%= @articles.content %></p>
+
+<%= link_to "back home", articles_path  %>
+
+
+<%= link_to "borrar articulo", articles_path(@article), method: :delete,
+    data: {confirm: "seguro de borrar"} %>

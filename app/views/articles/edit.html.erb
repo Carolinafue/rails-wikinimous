@@ -1,0 +1,15 @@
+<%= form_for @article do |f| %>
+  <%= f.label :title, "entrar titulo" %>
+  <%= f.text_field :title %>
+
+  <%= f.label :rating, "entrar Rating" %>
+  <%= f.text_field :rating %>
+
+  <%= f.label :autor, "nombre autor" %>
+  <%= f.text_field :autor %>
+
+  <%= f.label :content, "escribir articulo" %>
+  <%= f.text_field :content %>
+
+  <%= f.submit %>
+<% end %>
